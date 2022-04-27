@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-image: url('1.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.cont{
+    width: 400px;
+    min-height: 80vh;
+    max-height: 90vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+    box-shadow: 1px 1px 15px 1px black;
+    background-color: black;
+    border-radius: 30px;
+}
+
+.textarea{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    padding: 10px;
+    width: 100%;
+    height: 100px;
+    color: black;
+    font-size: 30px;
+    font-weight: bolder;
+    background-color: rgba(255, 255, 255, 0.76);
+    border-radius: 20px;
+}
+
+.ans{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    overflow: hidden;
+}
+
+.ta{
+    width: 100%;
+    height: 30px;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    overflow: hidden;
+}
+
+.clear, .ac{
+    padding: 20px 55px;
+    background-color: mediumspringgreen;
+}
+
+[data-sign='+']{
+    background-color: red;
+}
+
+[data-sign='-']{
+    background-color: rgb(255, 217, 5);
+}
+
+[data-sign='/']{
+    background-color: pink;
+}
+
+[data-sign='*']{
+    background-color: blue;
+}
+
+[data-sign='^']{
+    background-color: green;
+}
+
+[data-sign='%']{
+    background-color: hotpink;
+}
+
+[data-key='.']{
+    background-color: greenyellow;
+}
+
+.equal{
+    background-color: lightsalmon;
+}
+
+[data-key='('], [data-key=')']{
+    background-color: mediumslateblue;
+}
+
+span{
+    padding: 15px 30px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    cursor: pointer;
+    background-color: grey;
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+.ani{
+    transform: scale(1.1, 1,1);
+    background-color: black;
+}
